@@ -5,11 +5,13 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 
 import { TestD3ComponentComponent } from './test-d3-component/test-d3-component.component';
+import { FdlayoutComponent } from './fdlayout/fdlayout.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TestD3ComponentComponent
+    TestD3ComponentComponent,
+    FdlayoutComponent
   ],
   imports: [
     BrowserModule,
