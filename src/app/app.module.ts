@@ -6,12 +6,16 @@ import { AppComponent } from './app.component';
 
 import { TestD3ComponentComponent } from './test-d3-component/test-d3-component.component';
 import { FdlayoutComponent } from './fdlayout/fdlayout.component';
+import { FdOntologyComponent } from './fd-ontology/fd-ontology.component';
+import { TreediagComponent } from './treediag/treediag.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TestD3ComponentComponent,
-    FdlayoutComponent
+    FdlayoutComponent,
+    FdOntologyComponent,
+    TreediagComponent
   ],
   imports: [
     BrowserModule,

@@ -79,8 +79,8 @@ export class FdlayoutComponent implements OnInit {
     this.color = d3.scaleOrdinal(d3.schemeCategory20);
 
     this.simulation = d3.forceSimulation()
-      .force('link', d3.forceLink().id((d) => d['name']).strength(0))
-      .force('charge', d3.forceManyBody().strength(-5))
+      .force('link', d3.forceLink().id((d) => d['name']).strength(-1))
+      .force('charge', d3.forceManyBody().strength(-30).distance_max(1))
       .force('center', d3.forceCenter(this.width / 2 , this.height / 2));
     this.render(this.data);
   }
